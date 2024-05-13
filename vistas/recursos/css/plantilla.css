@@ -1,0 +1,138 @@
+/*=============================================
+Variables Globales
+=============================================*/
+:root {
+  --color-principal: #222222;
+    --color-secundario: #FCB536;
+    --color-auxiliar: #ffffff;
+    --color-gris: #808080;
+  }
+
+/*=============================================
+Navegacion stilos
+=============================================*/
+
+  ul, ol{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  a:link, a:visited,  a:hover, a:active{
+      text-decoration: none !important;
+      color: inherit !important;
+  }
+
+/*=============================================
+ backgrounds - Stilos
+=============================================*/
+
+.bg-principal{
+  background: var(--color-principal) !important;
+  color: var(--color-auxiliar) !important;
+}
+
+.bg-secundario{
+  background: var(--color-secundario) !important;
+  color: var(--color-auxiliar) !important;
+}
+
+.bg-auxiliar{
+  background: var(--color-auxiliar) !important;
+  color: var(--color-auxiliar) !important;
+}
+
+.bg-gris{
+  background: var(--color-gris) !important;
+  color: var(--color-auxiliar) !important;
+}
+
+/*=============================================
+text - Stilos
+=============================================*/
+
+.text-principal{
+  color: var(--color-principal) !important;
+}
+
+.text-secundario{
+  color: var(--color-secundario) !important;
+}
+
+.text-auxiliar{
+  color: var(--color-auxiliar) !important;
+}
+
+.text-gris{
+  color: var(--color-gris) !important;
+}
+
+/*=============================================
+text - Stilos
+=============================================*/
+/* botones normales */
+.btn-principal{
+  background: var(--color-principal) !important;
+  color: var(--color-auxiliar)!important;
+}
+
+.btn-secundario{
+  background: var(--color-secundario) !important;
+  color: var(--color-principal)!important;
+}
+
+.btn-auxiliar{
+  background: var(--color-auxiliar) !important;
+  color: var(--color-principal)!important;
+}
+
+.btn-gris{
+  background: var(--color-gris) !important;
+  color: var(--color-principal)!important;
+}
+
+/* botones hover */
+.btn-principal:hover{
+  background: var(--color-principal) !important;
+  color: var(--color-auxiliar)!important;
+}
+
+.btn-secundario:hover{
+  background: var(--color-secundario) !important;
+  color: var(--color-auxiliar)!important;
+}
+
+.btn-auxiliar:hover{
+  background: var(--color-auxiliar) !important;
+  color: var(--color-principal)!important;
+}
+
+.btn-gris:hover{
+  background: var(--color-gris) !important;
+  color: var(--color-principal)!important;
+}
+
+/*=============================================
+Bordes - stilos
+=============================================*/
+.border-principal
+{
+  border-color:  2px solid var(--color-principal);
+}
+
+.border-secundario,
+.border-end-secundario,
+.border-start-secundario,
+.border-top-secundario,
+.border-bottom-secundario
+{
+  border-color:  2px solid var(--color-secundario) !important;
+}
+
+.border-auxiliar{
+  border:  2px solid var(--color-auxiliar);
+}
+
+.border-azul-claro{
+  border:  2px solid var(--color-azul-claro);
+}

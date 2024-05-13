@@ -1,0 +1,85 @@
+/*=============================================
+navbar
+=============================================*/
+
+.cabecera {
+  /* background-color: var(--color-principal) !important; */
+  box-shadow: #0b1539ad 0px 1px 10px 0px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  color: transparent;
+  border: none;
+}
+
+.navbar-dark .navbar-toggler-icon  {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FCB536' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-position: center center;
+  background-size: contain;
+}
+
+/* Navbar hover de manera suave */
+.dropdown-menu {
+  display: none; /* Oculta el menú desplegable por defecto */
+  opacity: 0; /* Configura la opacidad inicial a 0 */
+  transition: opacity 0.4s ease; /* Agrega una transición suave de 0.3 segundos */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Muestra el menú desplegable al hacer hover */
+  opacity: 1; /* Cambia la opacidad a 1 para que aparezca de manera suave */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--color-secundario); /* Color de fondo al hacer hover */
+  color: var(--color-principal); /* Color de texto al hacer hover */
+}
+
+/* iconos */
+.footer-link,
+.icono-nav,
+.nav-link{
+  transition: all 0.4s ease;
+}
+
+.nav-link:hover{
+  color: var(--color-secundario) !important;
+}
+
+.footer-link:hover{
+  color: var(--color-secundario) !important;
+  transform: scale(1.2);
+}
+
+.icono-nav:hover{
+  transform: scale(1.2);
+}
+
+
+/*==================================================
+----large devices and up(92px and up)----
+===================================================*/
+
+@media (min-width: 992px) {
+
+	.menu-superior {
+		border-bottom: 1px solid var(--color-secundario) !important;
+	  }
+
+/* .menu ul li:hover {
+  border-top: 2px solid var(--color-secundario);
+
+} */
+
+.menu ul li {
+  border-top: 2px solid transparent; /* Borde transparente inicial */
+  transition: border-top 0.3s ease; /* Transición suave */
+}
+
+.menu ul li:hover {
+  border-top: 2px solid var(--color-secundario); /* Cambiar el color del borde */
+
+}
+
+}

@@ -1,0 +1,29 @@
+
+.tarjeta {
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    color:dark;
+    /* backdrop-filter: blur(15px) ; */
+}
+
+.tarjeta .icon-anexos {
+    max-width: 100%;
+    font-size: 4em;
+    transition: 0.4s;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tarjetas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta .icon-anexos:hover{
+    transform: scale(1.2);
+}
